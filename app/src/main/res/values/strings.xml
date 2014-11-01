@@ -8,7 +8,7 @@
     <string name="address_hint">Enter destination</string>
     <string name="title_activity_profile">Create a profile</string>
     <string name="title_activity_ready">Ready to Go?</string>
-    <string name="title_activity_meet">MeetActivity</string>
-    <string name="title_activity_rate">RateActivity</string>
+    <string name="title_activity_meet">Meet and Go</string>
+    <string name="title_activity_rate">Rate your Trip</string>
 
 </resources>
