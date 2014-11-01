@@ -8,11 +8,14 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.soundcloud.android.crop.Crop;
 
 import java.io.File;
 import java.io.IOException;
+
+import nz.co.hackmiramar.taxi_share.model.Profile;
 
 
 public class ProfileActivity extends Activity {
@@ -81,5 +84,12 @@ public class ProfileActivity extends Activity {
         mProfileImageBitmap = croppedBitmap;
         mIvProfileImage.setImageBitmap(croppedBitmap);
         findViewById(R.id.add_picture).setVisibility(View.GONE);
+    }
+
+    public void onSignUpPressed(View v) {
+        TextView tvName = (TextView) findViewById(R.id.profile_name);
+        TextView tvDescription = (TextView) findViewById(R.id.profile_description);
+        Profile.saveAppProfile(tvName.getText().toString(),
+                tvDescription.getText().toString(), mProfileImageBitmap);
     }
 }

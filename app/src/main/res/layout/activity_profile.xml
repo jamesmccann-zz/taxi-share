@@ -51,6 +51,7 @@
         android:layout_below="@+id/profile_image_container"
         android:layout_marginBottom="@dimen/spacer_large"
         android:maxLines="1"
+        android:singleLine="true"
         android:hint="Name"/>
 
     <EditText
