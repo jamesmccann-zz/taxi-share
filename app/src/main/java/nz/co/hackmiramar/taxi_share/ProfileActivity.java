@@ -89,7 +89,9 @@ public class ProfileActivity extends Activity {
     public void onSignUpPressed(View v) {
         TextView tvName = (TextView) findViewById(R.id.profile_name);
         TextView tvDescription = (TextView) findViewById(R.id.profile_description);
-        Profile.saveAppProfile(tvName.getText().toString(),
-                tvDescription.getText().toString(), mProfileImageBitmap);
+        if (Profile.saveAppProfile(tvName.getText().toString(),
+                tvDescription.getText().toString(), mProfileImageBitmap)) {
+            startActivity(new Intent(this, PlaceActivity.class));
+        }
     }
 }

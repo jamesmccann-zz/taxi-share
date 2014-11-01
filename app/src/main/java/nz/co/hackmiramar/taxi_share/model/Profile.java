@@ -14,7 +14,7 @@ public class Profile {
 
     private static final int SCALED_PICTURE_SIZE = 240;
 
-    public static void saveAppProfile(String name, String description, Bitmap image) {
+    public static boolean saveAppProfile(String name, String description, Bitmap image) {
         SharedPreferences prefs = Application.getAppContext().getSharedPreferences(Constants.APP_PREFERENCES, 1);
         SharedPreferences.Editor edit = prefs.edit();
         edit.putString(Constants.PREFS_PROFILE_NAME, name);
@@ -30,5 +30,6 @@ public class Profile {
 
         edit.putString(Constants.PREFS_PROFILE_IMAGE, imageFile.getPath());
         edit.apply();
+        return true;
     }
 }
