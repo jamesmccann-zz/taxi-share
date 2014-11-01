@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,8 +21,18 @@
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/autocomplete"
+        android:layout_above="@+id/btn_set_destination"
         map:cameraZoom="13"
         map:cameraTargetLat="-41.2889"
         map:cameraTargetLng="174.777"/>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btn_set_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Set destination"
+        android:onClick="onSetDestinationPressed" />
+
+</RelativeLayout>
