@@ -2,9 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="nz.co.hackmiramar.taxi_share" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:allowBackup="true"
         android:name=".Application"
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
@@ -27,6 +29,10 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name=".CheckinActivity"
+            android:label="@string/title_activity_checkin" >
+        </activity>
     </application>
 
 </manifest>

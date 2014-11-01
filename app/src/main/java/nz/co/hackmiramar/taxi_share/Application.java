@@ -2,6 +2,8 @@ package nz.co.hackmiramar.taxi_share;
 
 import android.content.Context;
 
+import com.firebase.client.Firebase;
+
 public class Application extends android.app.Application {
 
     private static Context mApplicationContext;
@@ -10,6 +12,7 @@ public class Application extends android.app.Application {
     public void onCreate() {
         super.onCreate();
         mApplicationContext = getApplicationContext();
+        Firebase.setAndroidContext(this);
     }
 
     public static Context getAppContext() {

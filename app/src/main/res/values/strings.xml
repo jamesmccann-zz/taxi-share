@@ -7,5 +7,6 @@
     <string name="title_activity_place">Place Selection</string>
     <string name="address_hint">Address</string>
     <string name="title_activity_profile">Create a profile</string>
+    <string name="title_activity_checkin">Checkin</string>
 
 </resources>
