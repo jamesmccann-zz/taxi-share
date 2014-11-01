@@ -2,6 +2,7 @@ package nz.co.hackmiramar.taxi_share;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.util.Log;
@@ -236,6 +237,10 @@ public class PlaceActivity extends Activity {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public void onSetDestinationPressed(View v) {
+        startActivity(new Intent(this, ReadyActivity.class));
     }
 
 }

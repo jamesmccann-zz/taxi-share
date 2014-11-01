@@ -1,34 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nz.co.hackmiramar.taxi_share">
+    package="nz.co.hackmiramar.taxi_share" >
 
     <permission
         android:name="com.example.project.package.permission.MAPS_RECEIVE"
-        android:protectionLevel="signature"/>
+        android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.project.package.permission.MAPS_RECEIVE"/>
-
+    <uses-permission android:name="com.example.project.package.permission.MAPS_RECEIVE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <application
-        android:allowBackup="true"
         android:name=".Application"
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
-
-        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBmycZXDynAiyrLivCTPpFTfHkgTkMyKpA"/>
-
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBmycZXDynAiyrLivCTPpFTfHkgTkMyKpA" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
         <activity
             android:name=".HomeActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,13 +36,25 @@
         </activity>
         <activity
             android:name=".PlaceActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/title_activity_place"></activity>
+            android:label="@string/title_activity_place"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ProfileActivity"
             android:label="@string/title_activity_profile"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name=".ReadyActivity"
+            android:label="@string/title_activity_ready" >
+        </activity>
+        <activity
+            android:name=".MeetActivity"
+            android:label="@string/title_activity_meet" >
+        </activity>
+        <activity
+            android:name=".RateActivity"
+            android:label="@string/title_activity_rate" >
+        </activity>
     </application>
 
 </manifest>

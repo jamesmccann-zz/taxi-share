@@ -18,6 +18,7 @@ public class HomeActivity extends Activity {
         } else {
             startActivity(new Intent(this, ProfileActivity.class));
         }
+        finish();
     }
 
 
