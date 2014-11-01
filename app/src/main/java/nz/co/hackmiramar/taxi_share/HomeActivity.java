@@ -14,7 +14,7 @@ public class HomeActivity extends Activity {
 
         SharedPreferences prefs = getSharedPreferences(Constants.APP_PREFERENCES, MODE_PRIVATE);
         if (prefs.contains(Constants.PREFS_PROFILE_NAME)) {
-            //TODO: start map
+            startActivity(new Intent(this, PlaceActivity.class));
         } else {
             startActivity(new Intent(this, ProfileActivity.class));
         }

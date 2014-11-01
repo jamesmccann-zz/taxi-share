@@ -9,16 +9,10 @@
     android:orientation="vertical"
     tools:context="nz.co.hackmiramar.taxi_share.PlaceActivity">
 
-    <EditText
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:hint="@string/address_hint"/>
-
-    <ListView
-        android:id="@+id/autocomplete"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-    </ListView>
-
 
 </LinearLayout>

@@ -32,7 +32,7 @@ public class PlaceActivity extends Activity {
     private static final String TYPE_AUTOCOMPLETE = "/autocomplete";
     private static final String OUT_JSON = "/json";
 
-    private static final String API_KEY = "YOUR_API_KEY";
+    private static final String API_KEY = "AIzaSyBmycZXDynAiyrLivCTPpFTfHkgTkMyKpA";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
